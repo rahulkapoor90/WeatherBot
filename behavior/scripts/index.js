@@ -83,7 +83,7 @@ exports.handle = function handle(client) {
         )
 
         const weatherData = {
-          temperature: resultBody.main.temp,
+          temperature: resultBody.status.message,
           condition: weatherDescription,
           city: resultBody.name,
         }
